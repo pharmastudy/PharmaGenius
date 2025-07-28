@@ -1,4 +1,3 @@
-
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from mytoken import TOKEN
@@ -9,7 +8,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("📚 Welcome to Pharma Study Bot! Choose a section below:", reply_markup=reply_markup)
 
 async def pharmacy_notes(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("📘 D.Pharm Notes\n📙 B.Pharm Notes\n📗 M.Pharm Notes\n(Coming Soon...)")
+    await update.message.reply_text("📘 D.Pharm Notes\\n📙 B.Pharm Notes\\n📗 M.Pharm Notes\\n(Coming Soon...)")
 
 async def gk_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("🧠 GK Quiz Coming Soon...")
